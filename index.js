@@ -1,3 +1,6 @@
+// 5 important topics of javascript
+// equality , permitives , Async Js , error Handling , ES6 Syntax , Array Methods
+
 // // Start  time 5:25
 // ?      ---- filter()-----
 // var words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
@@ -108,7 +111,10 @@
 // -----------------------------------------------------------------------
 // /
 // /  ----- Map and reduce Method ------------------------
-// ----     map()
+
+// ----          map()    -------
+// The map() method in JavaScript creates an array by calling a
+// specific function on each element present in the parent array.
 
 // let newArray = arr.map(callbck(currentValue[,index[,array]]){
 //     return element for newArray, after executing something
@@ -146,6 +152,17 @@
 //  })
 //  console.log(newArr);
 
+// example 2;
+// const products = [
+//     { name: 'Laptop', price: 32000, brand: 'Lenovo', color: 'Silver' },
+//     { name: 'Phone', price: 700, brand: 'Iphone', color: 'Golden' },
+//     { name: 'Watch', price: 3000, brand: 'Casio', color: 'Yellow' },
+//     { name: 'Aunglass', price: 300, brand: 'Ribon', color: 'Blue' },
+//     { name: 'Camera', price: 9000, brand: 'Lenovo', color: 'Gray' },
+// ];
+
+// const productName = products.map(product => product.name);
+// console.log(productName);
 // /--------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // -- challenge Time ;
@@ -180,9 +197,371 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 // ----- Reduce ()  Method
-// important method used in reactjs also 
+// In simple words reduce means  kis cheez ko reduce/ ya less karna
+// Or jha hamme single value chaiyhee hoo like when we need : percentage ,sum of all
+// important method used in reactjs also
 
 // flatten an array means to convert the 3d or 2d array
 //into single dimensional array
 
-// the reduce() method executes a reducer
+// the reduce() method executes a reducer function (that you provide)
+// on each Element of the array , resulting in single output value
+
+// the reducer function takes four arguments:
+
+// Accumulator
+// Cuurent Value
+// Current Index
+// Source Array
+
+// Example 01;
+// let arr =[ 5,6 ,2];
+
+// let sum =arr.reduce((accumulator , currentElement , currentIndex , array) =>{
+//     debugger;
+//     return accumulator += currentElement;
+// })
+
+// console.log(sum);
+
+// Example 02; with map() function
+// const arr = [1, 3, 4, 6, 8];
+// let arr2 = arr.map((currentElement) => {
+//     return currentElement * 2;
+//   }) .reduce((accumulator,currentElement) => {
+//     return accumulator +=currentElement;
+//   });
+//   console.log(arr2);
+
+// 2d dimensional array =['zone 1','zone2']
+// 3d dimensional array =['zone1','zone2','zone3']
+
+// how to fatten an Array
+// converting 2d and 3d array into aone dimensional array
+
+// const arr =[['zone 1','zone 2'],['zone 3','zone 4'], ['zone 5' ,'zone 6'], ['zone 7' , 'zone 8'] ];
+
+// const flatArr = arr.reduce((accum , currVal) =>{
+//     return accum.concat(currVal); //concat milata ha
+// })
+// console.log(flatArr);
+
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+//-----     STRINGS  -------------
+
+// Javascript strings are used for storing and manipulating text.
+// you  can use single or double quotes
+
+// Strings can be created as primitive,
+// from string literals, or as objects, using the string() constructor
+
+// hmm new string constructor se bhi string  create kar sakte ha
+// let Name = new String("fasih ahmed");
+// console.log(Name);
+
+// how to find the length of a string
+// string.prototype.length
+// Reflects the length of the string
+
+// let myName ="FasihAhmed";
+// console.log(myName.length);// length is a property
+
+// let sentence = "this a 'fasih ahmed'and he is a coder";
+// console.log(sentence);
+
+// =-------------------------------------------------------------------------------
+//  --------- indexOf()
+// --Finding a string in a string
+// String.prototype.indexOf(searchValue [ , from index])
+
+// the indexOf() method returns the index of (the posiiton) of  specified text
+
+// const myBioData ='I am the fasih ahmed';
+// console.log(myBioData.indexOf("fasih"));// indexOf() is a method
+
+// agar indexOf() data find nhi karsake ga tu wo hamme ( -1 ) return kare ga
+
+// console.log(myBioData.indexOf("a", 2));
+
+// --------- Search() method
+//
+//the search() method searches a string for specified value and
+// returns the position aof the match
+
+// const myBiodata = "T am the fasih Ahmed Raza";
+// let searchData = myBiodata.search("fasih");
+
+// console.log(searchData);
+
+// =--------------------------------------------------------------------
+
+// Extracting String Parts
+
+// there are 3 methods for extracting a part of a string:
+
+// slice(start , end)
+// substring(start , end)
+// substr(start length)
+
+// the slice() Method----
+// Slice() extracts a part of a string and returns the axtracted part
+//  in a new String
+
+// the slice() method  selects the elements starting at the  given
+// start argument, and ends at , but doesnot include,
+// the given end argument
+
+// var string = "Apple , Banana , Mango , Orange";
+// let response = string.slice(0,4);// 0 index se lekr 4 tak hamme value dee gaa or last index number count nhi hoga
+// let response2 = string.slice(7,-2);//-2 means string ke last 2  ko chor kar between me ane wale saree return kareee gaa
+// console.log(response2);
+
+// =---------------------------------------------------------------------------------------------------------
+
+// --------- challenge Time -------
+
+// Q : Display only 280 characters of a string like the one used
+//     in Twitter ?
+
+//  let myTweets ="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+
+// let myActualTweet =myTweets.slice(0,280);
+
+// console.log(myActualTweet);
+
+// // for checking its length
+// console.log(myActualTweet.length);
+// //
+
+// ---------------------------------
+// -- substring() Method
+// substring(start , end)
+
+// substring() is similar  to slice().
+
+// The difference is that substring() cannot accept
+// negative indexes.
+
+// var str = "Apple , Banana ,kiwi";
+// let res =str.substring(7,-1);// -1 wo ignore karrha ha
+// console.log(res);
+
+// --------------------------------------
+
+//  substring() Method ----
+// Substr() is similar to slice().
+
+// the differnce is that the second parameter specifies the
+// length of the extracted part.
+
+// var str = "Apple , Banana ,kiwi";
+// let res =str.substr(-10);//  last se count start karee gaa
+// console.log(res);
+
+// -----------------------------------------------------------
+
+// --- Replace()
+
+// the replace() method replace a specified value
+// with another value in a string
+
+// let myBioData = "I am Fasih Ahmed Raza";
+
+// let replaceData =myBioData.replace("Fasih" ,"FASIH");// (search value , replace value)
+// console.log(replaceData);
+
+//> Key
+// the replace() method replaces only first match
+//------------------------------------------------------------------------
+
+// -- Extracting String Characters
+// Extract => نکالنا    nikalana
+
+// there ae 3 methods for extracting string characters
+
+// charAt(position)
+// charCodeAt(position)
+// Property access [ ]
+
+// ----   charAt()   Method
+// charAt() method  returns the character at a
+// specified index ( postion ) ina a string
+
+// let string ="Hello world";
+
+// console.log(string.charAt(7));
+
+//--------------------------------------------------
+
+// 11. challenge time
+// return the unicode of the last character in a string
+
+// let str =" HELLO WORLD";
+// console.log(str.charCodeAt(10));
+
+// -------------------------------------
+
+// the charCodeAt() Method
+// charCodeAt() method  returns the unicode of the character at a
+
+// specified index ( postion ) ina a string
+//  The method returns a UTF-16 Code  ( an Integer Between ) and 65535).
+
+//  The Unicode Standard provides a unique number for every
+//  character, no matter the platform,device,application,or
+//  language.
+//  UTF-8 is a popular Unicode encoding which has 88-bit code units.
+
+// var str = " hello world";
+// console.log(str.charCodeAt(8));
+
+
+// =------------------------------------------------------------------------------
+
+//     property Access
+//  ECMASript 5 (2009) allows prperty access [ ] on strings
+
+// var str ="hello world";
+// console.log(str[4]);
+
+
+// ====----------------------------------------------------------------------------
+
+//        ----         Other Useful Methods ----
+
+// let myName = "FASIH AHMED RAZA";
+// console.log(myName.toUpperCase());
+// console.log(myName.toLowerCase());
+
+// the concat() method 
+// concat() joins two or more strings 
+
+// let firstName ="Fasih";
+// let LastName ="Ahmed";
+// console.log(`${firstName} ${LastName}`); //2nd method
+// console.log( firstName.concat(LastName) );
+// console.log( firstName.concat( "" , LastName));
+
+// --------------------------------------------------------------
+
+//   String.trim()
+//  the trim() method removes whitespace from both 
+// sides of a  string 
+
+// var str = "             hello world !           ";
+// console.log(str);
+// console.log(str.trim());
+// =----------------------------------------------
+
+// Converting a String to an Array
+// A string can be converted to an array with the
+//  spilt() method
+
+// var txt = "a,b,c,d,e,f,g"; //string
+
+//  console.log(txt.split(","));  // spilt on commas
+// console.log(txt.split(" "));   // spilt on spaces
+// console.log(txt.split("|"));  // spilt on pipe
+
+
+// ------------------------------------------------------------------------------------------------------------
+
+
+//  Date and time in Javascript ---
+
+// var a=1 ,b=2;
+// console.log(a+b);
+
+// Date And time in Javascript
+
+// there are 4 ways to create a new date object
+// new Date()
+// new date(year ,month ,day,hours,minutes,seconds,milliseconds)
+// it takes 7 arguments
+// new Date(milliseconds)
+//we cannnot avoid month section
+// new Date(date String)
+
+
+// // new Date()
+// /// isi method se hm date or time find karsakte ha
+// let  currDate = new Date();
+// console.log(currDate);// 2022-01-03T11:21:44.821Z
+
+// console.log(new Date().toLocaleString());//  1/3/2022, 4:21:44 PM
+// console.log(new Date().toString());// jo value hmme browsr console par milte ha //
+// // Mon Jan 03 2022 16:24:44 GMT+0500 (Pakistan Standard Time)
+
+// ----------------------------------------------------------------------------------------------------------
+
+// Date.now()
+// hame milliseconds return karta ha  january 1 , 1970 s lekr abhi tak
+// console.log( Date.now());
+
+// -------------------------------
+// new Date(year,month, ................)7 arguments it takes
+// 7 numbers specify year, momth,day ,hour ,minute,second, and millisecond (in that order)
+// note: In javascript months counts from 0 to 11.
+// January is 0. December is 11.
+
+// is method  se hmm date restrict lada saktee ha i.e is like launch date
+//  var d = new Date(2021 ,0, 5, 10 ,33,20,0);
+// // (year ,month ,day,hours,minutes,seconds,milliseconds)
+// console.log(d);
+// console.log(d.toLocaleString());
+// console.log(d.toString());
+
+// new Date(datesString) -------
+// new Date(datesString) creates a new date object from  a date string
+
+// var d = new Date("January 13 , 2021 11:13:00");
+// console.log(d.toLocaleString());
+
+// new Date( milllisecond)
+// console.log(Date.now());// Answer==>1641210595302 
+//  var d = new Date(1641210595302);
+//  console.log(d);
+
+// -------------------------------------------------------------------------------------------------
+
+//   ------ Dates Method ------
+
+// const currDate = new Date();
+
+//   how to get the indivisual date
+//Learn self in another time this all methods
+// console.log(currDate.toLocaleString());
+// console.log(currDate.setFullYear());//
+// console.log(currDate.setMonth());// 
+// console.log(currDate.setDate());
+
+
+// // -------------------------------------------------------------------------------------------------------------
+
+// // ---        Time Methods --
+//         //    (  get and  set )
+
+
+//         // --get methods
+//  const curTime = new Date();
+
+//  // how to get an individual time
+
+//  console.log(curTime.getTime());
+// // the getTime() returns  the hours the numbers of milliseconds
+// // since Januaury 1, 1978
+// console.log(curTime.getHours());
+// // the gethours() method returns he hours of a date as a number (0-23)
+// console.log(curTime.getMinutes());
+// console.log(curTime.getSeconds());
+// console.log(curTime.getMilliseconds());
+
+
+// -- set methods ( jo hmm khod set karsakte ha)
+const currTime = new Date();
+
+console.log(currTime.setTime(4));
+
+console.log(currTime.setMinutes());
+console.log(currTime.setSeconds());
+console.log(currTime.setHours());

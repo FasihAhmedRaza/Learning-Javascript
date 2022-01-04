@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> Click the button to display a date after changing</p>
+    <button onclick="myfunction()"> Try it</button>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <script>
+        function myfunction(){
+            var t = new Date();
+            t.setHours(5);
+            document.getElementById("demo").innerHTML =t;
+        }
+        (function(){(setInterval(()=>{ // setIntervals se time countinuously chalta rhee gaa
+                
+                var d = new Date().toLocaleString();
+                document.getElementById("demo2").innerHTML=d;
+            
+            }) ,1000)
+        })();
+        
+    </script>
+</body>
+</html>
