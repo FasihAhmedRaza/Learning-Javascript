@@ -558,10 +558,16 @@
 
 
 // -- set methods ( jo hmm khod set karsakte ha)
-const currTime = new Date();
 
-console.log(currTime.setTime(4));
+// const currTime = new Date();
 
-console.log(currTime.setMinutes());
-console.log(currTime.setSeconds());
-console.log(currTime.setHours());
+// console.log(currTime.setTime(4));
+
+// console.log(currTime.setMinutes());
+// console.log(currTime.setSeconds());
+// console.log(currTime.setHours());
+
+//------------------------------------------------------
+// -- Practice time---
+
+new Date().toLocaleTimeString();

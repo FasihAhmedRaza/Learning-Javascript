@@ -11,7 +11,15 @@
     <button onclick="myfunction()"> Try it</button>
     <p id="demo"></p>
     <p id="demo2"></p>
+    <!--  Practice time -->
+    <p id="p1"></p>
+    <p id="p2"></p>
     <script>
+        var t =new Date().toLocaleTimeString();
+        document.getElementById("p1").innerHTML=t;
+
+        var d = new Date().toLocaleDateString();
+        document.getElementById("p2").innerHTML =d;
         function myfunction(){
             var t = new Date();
             t.setHours(5);
