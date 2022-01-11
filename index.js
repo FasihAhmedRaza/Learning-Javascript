@@ -570,4 +570,29 @@
 //------------------------------------------------------
 // -- Practice time---
 
-new Date().toLocaleTimeString();
+// new Date().toLocaleTimeString();
+
+//**********     Math Object in Javascript ******/
+
+// the javascript math object allows you to its nearset integer
+
+// let num =10.2354;// it work just like we use in round of karte ha number ka
+// console.log(Math.round(num));
+
+// Math.pow()
+// Math.pow(x,y) returns the value of x to the power of y
+
+// console.log(Math.pow(2,5)); //the number 2 its power is 5 
+
+//******* Math.sqrt() ******/
+// Math.sqrt(x) returns the square root of x
+
+// console.log(Math.sqrt(5)); // square root _/5 =>2.23606797749979
+// console.log(Math.sqrt(81));//=>9
+
+//******** Math.abs() *****/
+ // Math.abs(x) hamesha  positive value return karta ha beshak value negative hi kue na hoo
+ // returns the absolute (positive) value of x
+
+//  console.log(Math.abs(-55));//always return positve =>55
+// console.log(Math.abs(4-6));//used in that cases
