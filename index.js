@@ -595,4 +595,4 @@
  // returns the absolute (positive) value of x
 
 //  console.log(Math.abs(-55));//always return positve =>55
-// console.log(Math.abs(4-6));//used in that cases
+// console.log(Math.abs(4-6));
