@@ -574,7 +574,11 @@
 
 //**********     Math Object in Javascript ******/
 
-// the javascript math object allows you to its nearset integer
+// the Javascipt Math object allows you to perform mathmatical tasks on munbers.
+
+
+// Math.round()
+//returns the value of x rounded to its nearest integer// the javascript math object allows you to its nearset integer
 
 // let num =10.2354;// it work just like we use in round of karte ha number ka
 // console.log(Math.round(num));
@@ -596,3 +600,38 @@
 
 //  console.log(Math.abs(-55));//always return positve =>55
 // console.log(Math.abs(4-6));
+
+// Math.ceil()
+// Math.ceil() return  kare gaa hamesha round of beshak value 5 se greater ho yah nahi
+// ceil() method me agar . lag gea tu hamesha increment hoga
+
+// console.log(Math.ceil(4.51));//=>5
+// console.log(Math.ceil(4.1));//it still roundoff =>5
+
+// // if check in round()
+// console.log(Math.round(4.1));// 4
+
+// Math.floor()
+// Math.floor() hamseha point se phle wali value return kare gaa
+
+// console.log(Math.floor(23.56));// it returns 23
+
+
+// Math.min()
+// Math.min() can be used to find the lowest value ina list of argument
+
+// console.log(Math.min(0,23,2435,543,666,11,3,12));
+
+// Math.max()
+// Math.max() can be used to find the highestS value ina list of argument
+
+// console.log(Math.max(0,23,2435,543,666,11,3,12));
+
+
+// ---- Math.random()
+// Math.random() returns a random number 0 , and 1
+
+// console.log(Math.random()*10);
+// it gives always with point value 
+//so we use floor() to avoid this
+console.log(Math.floor(Math.random()*10));
