@@ -634,4 +634,41 @@
 // console.log(Math.random()*10);
 // it gives always with point value 
 //so we use floor() to avoid this
-console.log(Math.floor(Math.random()*10));
+// console.log(Math.floor(Math.random()*10));
+
+// Math.trunc()
+// the trunc() method returns the integer part of a a number
+
+// decimal s phele jo bhi number ho wo return kare gaa chaiyee wo -ve Or +ve h
+
+// console.log(Math.trunc(-234.234));
+
+// ----------------------------------------------------------------------------------------------------
+
+// BOM => browser object model
+//OOP => object oriented programming
+
+//  ******************** D O M vs B O M **************
+
+// DOM=> the DOM  is the document object model,which deals with the document ,
+//  the html Elements  themselves,e .g : document & all traversal 
+// you would do init, events , etc.
+// EXAMPLE:- 
+//  change in background color  to red
+//  document.body.style.background ="red";
+
+// BOM => 
+ //   the BOM is the browser object Model , which deals with browser components
+ //   aside from the document , like history ,location ,navigator and screen
+ //  (as well as some others that vary by browser).
+                // OR
+//    In simple meaning all the windows operations which comes under BOM are performend
+  //     using BOM
+
+  // so example of window object properties are 
+//   innerHeight,
+//   innerWidth and many more etc 
+
+
+
+
