@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <h1>Different Events type in Javascript</h1>
+        <button onclick="alert('I am awesome ,But No one use me')"> Simple Inline alert()</button>
+    
+     <button onclick="callingFunction()"> By calling a Function</button>
+
+
+   
+        <button onclick=""  id="3way"> Inline Event </button>
+        <button id="4way">
+            Event Listener
+            
+            </button>
+
+
+
+
+
+
+
+    <script>
+// 2nd way of writing function
+    const callingFunction = () =>{
+        alert('most common way of writing functions');
+    }
+ // 3way of writing function
+    const thirdway = document.getElementById('3way');
+    thirdway.onclick = function() { // we use anonymous function jis ka koi name hi nhi hota
+        alert('most common way of writing functions again');
+    }
+
+// 4way of writing function
+   const fourway = document.getElementById('4way');
+   fourway.addEventListener( 'click' ,() => {
+       alert('I love this way of writing functions');
+   })  //  addEventListener its takes 3 arguments  1)  konsa event fire karna ha  2) konse event ko use karna ha 3) true false
+
+
+    </script>
+    <style>
+       body{
+        background-color: rgb(151, 153, 153);
+    }
+    h1{
+        text-align: center;
+        font-family:monospace;
+        color: rgb(10, 10, 10);
+    }
+    button{
+        text-align: center;
+        margin-left: 310px;
+       display: block;
+       text-decoration: solid;
+       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       border-color: rgb(0, 0, 0);
+       color: darkcyan;
+       border-style: double;
+       background-color: rgb(68, 75, 90);
+       box-sizing: content-box;
+       width: 100px;
+       height: 40px;
+       text-decoration: none;
+       cursor: pointer;
+       /* font-size: 13px; */
+       /* font-style: italic; */
+       
+    }
+</style>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <h1 id="Heading"> Change the Content of h1</h1>
+    <Button onclick="changeContent()"> Click Me</Button>
+    <!-- <Button onclick="headingchange"> Click Me</Button> -->
+
+
+
+
+
+
+
+    <script>
+        const changeContent =() =>{
+            document.getElementById("Heading").innerHTML = "Welcome to Fasih Website";
+        }
+       // or
+        // const headingchange = document.getElementById('Heading');
+        // headingchange.innerHTML ="I change Again";
+
+// if we use classes then we write 
+// document.getElementsByClassName()
+
+//we can also use tag name
+// document.getElementsByTagName('')
+
+
+// querrySelector returns the first matching value whereas
+// querrtSelectorAll() will return all the elements
+
+// document.querySelector('heading').innerHTML ="I changed again";
+// querry slector sare operation use karta like id , classes ,tag etc
+//  if 
+// id : '#idname'
+// class: '.classname'
+
+    </script>
+
+
+
+
+
+
+
+<style>
+    body{
+        background-color: rgb(138, 169, 177);
+    }
+    h1{
+        text-align: center;
+        font-family:monospace;
+        color: rgb(10, 10, 10);
+    }
+    button{
+        text-align: center;
+        margin-left: 310px;
+       display: block;
+       text-decoration: solid;
+       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       border-color: rgb(43, 255, 0);
+       color: darkcyan;
+       border-style: double;
+       background-color: rgb(68, 75, 90);
+       box-sizing: content-box;
+       width: 100px;
+       height: 40px;
+       font-size: 23px;
+    }
+</style>
+</body>
+
+</html>

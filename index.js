@@ -2,6 +2,11 @@
 // equality , permitives , Async Js , error Handling , ES6 Syntax , Array Methods
 
 // // Start  time 5:25
+// simple function me 
+// wo  state function ka leta ha 
+
+//or arrow function me state component ka leta ha
+
 // ?      ---- filter()-----
 // var words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
 
@@ -11,6 +16,7 @@
 
 // -----------------------------------------------------------------------------------------------------------------------------------------------
 
+// --- splice(index  , number:how many you want for delete ) // used for delete
 // //  --------  PUSH()-------
 // // Array.prototype.push()
 // //the push() method add one or more elements to the
@@ -81,7 +87,7 @@
 // 4. delete June from an array?
 // using one method
 
-//  -------- Splice()---
+//  -------- Splice()--- // it is used for  delete
 // Adds  and /or removes elemnts from an array.
 
 // const months =["jan","march","april" ,"june","July"];
@@ -668,6 +674,16 @@
   // so example of window object properties are 
 //   innerHeight,
 //   innerWidth and many more etc 
+
+// ----------///practice problem
+ // get data from object from user choice
+
+// var obj ={
+//     name :"fasih",
+//     email :"ff1"
+// }
+// var val = prompt("ENter value");
+// console.log(obj[val]);
 
 
 
