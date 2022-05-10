@@ -689,3 +689,16 @@
 
 
 
+// ----------///practice problem
+ // get data from object from user choice
+
+// var obj ={
+//     name :"fasih",
+//     email :"ff1"
+// }
+// var val = prompt("ENter value");
+// console.log(obj[val]);
+
+// vaar asfkajsjoij
+
+
