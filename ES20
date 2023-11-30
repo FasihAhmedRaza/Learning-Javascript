@@ -1,0 +1,206 @@
+
+// const products = [
+//     { name: 'Laptop', price: 32000, brand: 'Lenovo', color: 'Silver' },
+//     { name: 'Phone', price: 700, brand: 'Iphone', color: 'Golden' },
+//     { name: 'Watch', price: 3000, brand: 'Casio', color: 'Yellow' },
+//     { name: 'Aunglass', price: 300, brand: 'Ribon', color: 'Blue' },
+//     { name: 'Camera', price: 9000, brand: 'Lenovo', color: 'Gray' },
+// ];
+
+
+
+// var fasih = 45 ;
+// let a = 5 ;
+
+// console.log(fasih + a)
+
+
+
+
+// console.log(products)
+
+// var n = 4;
+
+// n +=1;
+
+// console.log(n)
+
+// let fa  =5  ;( fa < 4)? console.log("45"):console.log("333")
+
+//  var m = [ 'a ', 'aa' ,'h' ];
+
+// for ( var i = 0 ; i < m.length ;i++){
+
+//     console.log(m[i]);
+// }
+
+
+// for in loops  (index number de ga )
+
+// for ( let elements in m ){
+//     console.log(elements);
+// }
+// // for of loops ( data de ga sara like all in arrays )
+// for ( let elements of m ){
+//     console.log(elements);
+// }
+
+
+
+// CALL BACK FUCTIONS
+
+// function( element , index , aray)
+
+
+
+// m.forEach(function(element , index , array ){
+//     console.log( element + array + index)
+
+// })
+
+
+
+// m.forEach((element , index , array ) =>{
+//     console.log( element + array + index)
+
+// })
+
+
+
+
+// Splice ()
+//  for add or remove
+
+// var d1 = [ 'a', 'b ' , 'd ' ,'e' , 'f'];
+
+// const r = d1.splice(d1.length, 0 , "e" );
+// console.log(r)
+
+
+// var d1 = [ 'a', 'b ' , 'd ' ,'e' , 'f'];
+
+
+// const hh = d1.splice(1 , 1 , " March");
+
+// console.log(hh);
+
+
+// splice( indexNO , deleete index , updated data )
+
+// map method  
+
+// aik new array  return karta containing the data we need 
+
+
+// var m = [ 'a ', 'b' ,'h' ,'s' ];
+
+// let newArr = m.map((curElm , index , arr) => {
+//     return ` Index ${index}  value ${curElm} array ${arr}`
+// })
+
+// console.log(newArr);
+
+
+
+// ----------  Reduce() method
+// reduce method 2d 3d ko convert krta ha 1 dimensional mee 
+
+// it takes 4 arguments 
+// Accumulator , current value , curent index , source aray 
+
+
+
+// let arr = [ 2 , 4 , 6];
+
+// let  sum = arr.reduce((Accumulator , CurrElem) => {
+
+//     return Accumulator *= CurrElem
+// ;})
+
+// console.log(sum);
+
+
+// const arr = [2, 5, 7, 4];
+
+// // Sorting in ascending order
+// arr.sort((a, b) => a - b);
+
+// console.log(arr);
+
+
+// // (a, b) => a - b: Sort in ascending order.
+// // (a, b) => b - a: Sort in descending order.
+
+
+// const arr = [2, 5, 7, 4];
+
+// // Sorting in descending order
+// arr.sort((a, b) => b - a);
+
+// console.log(arr);
+// // Output: [7, 5, 4, 2]
+
+// const arr = ['apple', 'banana', 'orange', 'grape'];
+
+// // Sorting in ascending order
+// arr.sort();
+
+// // Reversing the sorted array to get descending order
+// arr.reverse();
+
+//------Exracting  -> removes or take out
+
+// let st = "i am fasih"
+
+// console.log( st.slice(0 , 8))
+
+
+
+// // promise two properties hoti ha 
+// // state or result
+// let promise = new Promise()
+
+
+let p1 = new Promise ((resolve , reject) =>{
+
+    setTimeout(()=>
+    {
+        resolve("27 Deg")
+    } , 1000)
+})
+// async functions always returns promise 
+
+async functon me await use hota ha (jo promise hota ha)
+
+    async function fetchData() {
+    const result = await fetch('https://api.example.com/data');
+    const data = await result.json();
+    return data;
+}
+
+async function harry({
+    return 5
+})
+
+harry.then((x) => {
+    alert(x)
+})
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
